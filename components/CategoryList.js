@@ -36,6 +36,11 @@ const CategoryList = ({category}) => {
           title: 'https://icons.veryicon.com/png/o/commerce-shopping/jie-yu-general-merchandise-department/milk-48.png',
           name: "Dairy"
         },
+        {
+          id: '58694a0f-yhyh3da1-471f-bd96-145571e29d72',
+          title: 'https://icons.veryicon.com/png/o/food--drinks/vegetable-fruit-1/wheat-2.png',
+          name: "Grains"
+        }
       ];
 
       const Item = ({ title, name }) => (
@@ -43,8 +48,8 @@ const CategoryList = ({category}) => {
             <Image 
                 source={{uri: title}}
                 style={{
-                    height:50,
-                    width:50,
+                    height:43,
+                    width:43,
                     resizeMode:'contain',
                 }}
             />

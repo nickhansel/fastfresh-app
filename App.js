@@ -6,9 +6,13 @@ import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons'; 
 import Home from "./screens/Home";
 import Farm from "./screens/Farm";
+import Order from "./screens/Order";
 import { createStackNavigator } from "@react-navigation/stack";
 import { AntDesign } from '@expo/vector-icons'; 
-
+import OrderConfirm from "./screens/OrderConfirm";
+import OrderScreen from "./screens/OrderScreen";
+import Search from "./screens/Search";
+import Account from "./screens/Account";
 
 const Stack = createStackNavigator();
 
@@ -113,6 +117,26 @@ const HomeNavigator = () => {
           name="Farm"
           component={Farm}
         />
+        <Stack.Screen
+          // use CustomHeader component as a header
+          // make tabbar icon
+          options={{
+            header: (props) => <FarmHeader {...props} />,
+          }}
+
+          name="Order"
+          component={Order}
+        />
+        <Stack.Screen
+          // use CustomHeader component as a header
+          // make tabbar icon
+          options={{
+            header: (props) => <FarmHeader {...props} />,
+          }}
+
+          name="Confirm"
+          component={OrderConfirm}
+        />
     </Stack.Navigator>
   );
 };
@@ -156,7 +180,7 @@ export default function App() {
             ),
           }}
           name="Search"
-          component={SettingsScreen}
+          component={Search}
         />
         <Tab.Screen
           options={{
@@ -166,7 +190,7 @@ export default function App() {
             ),
           }}
           name="Orders"
-          component={SettingsScreen}
+          component={OrderScreen}
         />
         <Tab.Screen
           options={{
@@ -176,7 +200,7 @@ export default function App() {
             ),
           }}
           name="Account"
-          component={SettingsScreen}
+          component={Account}
         />
       </Tab.Navigator>
     </NavigationContainer>

@@ -1,15 +1,16 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, ImageBackground } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from "@react-navigation/native";
 
 import FarmItem from "../components/FarmItem";
 
 const Farm = (props) => {
+    const navigation = useNavigation();
 
     const { name, url, items, fee, dist, itemIds} = props.route.params;
 
     // map through items and find the item that is in the itemIds array
     const item = items.filter((item) => itemIds.includes(item.id));
-
-    console.log(item)
 
     return (
         <>
@@ -29,12 +30,22 @@ const Farm = (props) => {
                     url={item.url}
                     name={item.name}
                     price={item.price}
+                    id={item.id}
                 />
             ))}
         {/* place order button */}
         </ScrollView>
         <View style={styles.button}>
-        <TouchableOpacity style={{height: "70%", backgroundColor: "#009E60", width: "90%", borderRadius: 20, alignItems: "center", justifyContent: "center"}}>
+        <TouchableOpacity 
+        onPress={() => navigation.navigate("HomeScreen", { screen: "Order", params:{
+            name: name,
+            url: url,
+            items: items,
+            fee: fee,
+            dist: dist,
+            itemIds: itemIds
+        }})}
+        style={{height: "70%", backgroundColor: "#009E60", width: "90%", borderRadius: 20, alignItems: "center", justifyContent: "center"}}>
             <Text style={styles.buttonText}>Place Order</Text>
         </TouchableOpacity>
     </View>

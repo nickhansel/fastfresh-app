@@ -11,3 +11,13 @@ export const getItems = async () => {
     const response = await axios.get(`${url}/item`);
     return response.data;
 }
+
+export const getOrders = async () => {
+    const response = await axios.get(`${url}/order`);
+    return response.data;
+}
+
+export const createOrder = async (order) => {
+    const response = await axios.post(`${url}/order`, order);
+    return response.data;
+}
