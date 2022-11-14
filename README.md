@@ -9,7 +9,7 @@ We saw how critical delivery apps have been for those unable to leave their home
 
  ![alt](https://cdn.discordapp.com/attachments/880483539244683305/1031255891099516939/resizedgif.gif ) 
 
-## How we built it 
+## How we built it
 ![alt](https://media.discordapp.net/attachments/880483539244683305/1031257947902328894/Screen_Shot_2022-10-16_at_12.30.50_PM.png?width=1530&height=1054)
 # Backend
 We build the backend with Python and Flask with MongoDB as a primary database. The backend interacts with Google Maps API to route detinations between delivery drivers and customers.
