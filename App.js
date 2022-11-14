@@ -16,6 +16,7 @@ import Account from "./screens/Account";
 
 const Stack = createStackNavigator();
 
+
 function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
