@@ -1,4 +1,4 @@
-## Inspiration 
+## Inspiration
 We wanted to do a project that could benefit the agriculture industry as well as the average consumer.
 We saw how critical delivery apps have been for those unable to leave their homes and we want to finally connect farmers with an untapped market.
 
