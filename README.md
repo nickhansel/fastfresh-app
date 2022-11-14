@@ -4,7 +4,7 @@ We saw how critical delivery apps have been for those unable to leave their home
 
 ![title](https://media.discordapp.net/attachments/880483539244683305/1031254117567443054/Screen_Shot_2022-10-16_at_12.14.15_PM.png)
 
-## What is Fastfresh?  
+## What is Fastfresh?   
  Fastfresh provides a service that connects farmers with a new market of consumers. The app allows for users to order fresh food directly from farms by using delivery drivers who pick up and deliver the food straight to their doorstep. 
 
  ![alt](https://cdn.discordapp.com/attachments/880483539244683305/1031255891099516939/resizedgif.gif ) 
