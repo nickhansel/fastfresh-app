@@ -11,6 +11,7 @@ const Order = (props) => {
     const { name, url, items, fee, dist, itemIds} = props.route.params;
 
     const [cart, setCart] = useState([]);
+    
     const [cartUnique, setCartUnique] = useState([]);
 
     const getCart = async () => {
